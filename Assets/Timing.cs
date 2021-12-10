@@ -27,7 +27,7 @@ public class Timing : MonoBehaviour
                 float sphereTime = Mathf.Sqrt(2 * dist / Mathf.Abs(Physics.gravity.y));
                 float platformDist = transform.position.z - sphere.position.z;
                 float platformTime = Mathf.Abs(platformDist / speed);
-                sphere.position = new Vector3(sphere.position.x, transform.position.y + Random.Range(5.0f, 25.0f), sphere.position.z);
+                sphere.position = new Vector3(sphere.position.x, transform.position.y + Random.Range(5.0f, 20.0f), sphere.position.z);
                 Logger.Log(string.Format("Time: {3}\nFall: {0}s\nPlat: {1}s\nError: {2}s", sphereTime, platformTime, sphereTime - platformTime, System.DateTime.Now));
             }
             else
