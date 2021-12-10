@@ -1,0 +1,70 @@
+[api-updater (non-obsolete-error-filter)] 10/29/2021 3:16:32 PM : Starting C:/Users/Elmeri/Documents/UnityInstalls/2020.3.11f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 491.3119ms
+moved types parse time: 45ms
+candidates parse time : 0ms
+C# parse time         : 242ms
+candidates check time : 45ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 10/29/2021 3:23:05 PM : Starting C:/Users/Elmeri/Documents/UnityInstalls/2020.3.11f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 56.0501ms
+moved types parse time: 42ms
+candidates parse time : 1ms
+C# parse time         : 178ms
+candidates check time : 39ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 11/16/2021 1:39:33 PM : Starting C:/Users/Elmeri/Documents/UnityInstalls/2020.3.11f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 481.7529ms
+moved types parse time: 46ms
+candidates parse time : 0ms
+C# parse time         : 233ms
+candidates check time : 25ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 11/18/2021 11:19:56 AM : Starting C:/Users/Elmeri/Documents/UnityInstalls/2020.3.11f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 462.4207ms
+moved types parse time: 43ms
+candidates parse time : 0ms
+C# parse time         : 184ms
+candidates check time : 28ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 11/18/2021 11:22:24 AM : Starting C:/Users/Elmeri/Documents/UnityInstalls/2020.3.11f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 52.0476ms
+moved types parse time: 41ms
+candidates parse time : 0ms
+C# parse time         : 147ms
+candidates check time : 27ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 11/18/2021 11:23:49 AM : Starting C:/Users/Elmeri/Documents/UnityInstalls/2020.3.11f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 52.0473ms
+moved types parse time: 41ms
+candidates parse time : 0ms
+C# parse time         : 149ms
+candidates check time : 23ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 12/9/2021 12:34:23 PM : Starting C:/Users/Elmeri/Documents/UnityInstalls/2020.3.11f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 516.4695ms
+moved types parse time: 43ms
+candidates parse time : 0ms
+C# parse time         : 226ms
+candidates check time : 38ms
+console write time    : 0ms
+
