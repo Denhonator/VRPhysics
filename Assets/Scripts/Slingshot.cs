@@ -61,6 +61,12 @@ public class Slingshot : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            var em = trail.emission;
+            em.enabled = !em.enabled;
+        }
+
         dist = tip.position - bowstring.position;
         float distm = dist.magnitude;
         if (distm > maxStretch)
