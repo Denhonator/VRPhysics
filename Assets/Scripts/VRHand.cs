@@ -16,6 +16,7 @@ public class VRHand : MonoBehaviour
     [SerializeField] Collider col = null;
     [SerializeField] float throwBoost = 1.5f;
     [SerializeField] float maxThrow = 7;
+    [SerializeField] float rigidSpeed = 40;
     ParticleSystem poof = null;
     public static List<Rigidbody> windrbs = new List<Rigidbody>();
     Transform grabber = null;
@@ -136,8 +137,7 @@ public class VRHand : MonoBehaviour
         if (pickedUpFollow)
             pickedUpFollow.enabled = true;
 
-        if (force)
-            nearObject.Remove(pickedUpObject);
+        nearObject.Remove(pickedUpObject);
 
         pickedUpObject.gameObject.layer = 8;
 
@@ -200,7 +200,7 @@ public class VRHand : MonoBehaviour
             if (pickedUpRigid)
             {
                 pickedUpRigid.useGravity = false;
-                pickedUpRigid.velocity += (transform.position - grabPoint.position) * 20;
+                pickedUpRigid.velocity += (transform.position - grabPoint.position) * rigidSpeed;
             }
             else
                 pickedUpObject.position = Vector3.Lerp(pickedUpObject.position, 2 * transform.position - grabPoint.position, 0.3f);

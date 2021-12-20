@@ -8,7 +8,7 @@ public class Score : MonoBehaviour
     public Text score = null;
     public Text score2 = null;
     public bool isTarget = false;
-    public Transform moveTarget = null;
+    public static Transform moveTarget = null;
     public Transform trajectory = null;
     public Transform drop = null;
     public float randomRange = 14;
@@ -19,7 +19,6 @@ public class Score : MonoBehaviour
 
     void Start()
     {
-        startPos = moveTarget.position;
         accuracy = new List<float>();
         accuracy2 = new List<float>();
         Random.InitState(0);
@@ -50,14 +49,14 @@ public class Score : MonoBehaviour
                 Logger.Log(string.Format("From target: {0}", diff));
                 accuracy.Add(diff);
             }
-            score.text = accuracy[accuracy.Count - 1] + "\n" + score.text;
-            score2.text = score.text;
-            collision.transform.position += Vector3.down * 20;
-            moveTarget.position = startPos + Vector3.forward * Random.Range(-randomRange, randomRange) + Vector3.right * Random.Range(-randomRange, randomRange);
-            if (isTarget)
-                moveTarget.GetComponent<Renderer>().sharedMaterial.EnableKeyword("_EMISSION");
-            else
-                moveTarget.GetComponent<Renderer>().sharedMaterial.DisableKeyword("_EMISSION");
+            //score.text = accuracy[accuracy.Count - 1] + "\n" + score.text;
+            //score2.text = score.text;
+            //collision.transform.position += Vector3.down * 20;
+            //moveTarget.position = startPos + Vector3.forward * Random.Range(-randomRange, randomRange) + Vector3.right * Random.Range(-randomRange, randomRange);
+            //if (isTarget)
+            //    moveTarget.GetComponent<Renderer>().sharedMaterial.EnableKeyword("_EMISSION");
+            //else
+            //    moveTarget.GetComponent<Renderer>().sharedMaterial.DisableKeyword("_EMISSION");
             cooldown = 1;
         }
         else if (trajectory.gameObject.activeInHierarchy)
@@ -71,8 +70,8 @@ public class Score : MonoBehaviour
             //Debug.Log(string.Format("Col time: {0} Col z: {1} Calc grav: {2}", calctime, collision.transform.position.z, calcgrav));
             //Debug.Log(string.Format("Guess time: {0} Guess z: {1} Guess grav: {2}", guesstime, trajectory.position.z, guessgrav));
             accuracy2.Add((guesstime - calctime) / calctime);
-            score.text = accuracy2[accuracy2.Count - 1] + "\n" + score.text;
-            score2.text = score.text;
+            //score.text = accuracy2[accuracy2.Count - 1] + "\n" + score.text;
+            //score2.text = score.text;
             Destroy(collision.gameObject);
         }
         else if (drop.gameObject.activeInHierarchy)
@@ -82,8 +81,8 @@ public class Score : MonoBehaviour
             float fallTime = Time.time - Timing.droptime;
             //accuracy2.Add(collision.transform.localPosition.z - drop.localPosition.z);
             accuracy2.Add(timeError / fallTime);
-            score.text = accuracy2[accuracy2.Count - 1] + "\n" + score.text;
-            score2.text = score.text;
+            //score.text = accuracy2[accuracy2.Count - 1] + "\n" + score.text;
+            //score2.text = score.text;
             Destroy(collision.gameObject);
         }
     }

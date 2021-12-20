@@ -26,16 +26,20 @@ public class Events : MonoBehaviour
     {
         for(int i = 0; i < slopes.Count; i++)
         {
-            slopes[i].gameObject.SetActive(v == i+1);
+            slopes[i].gameObject.SetActive(v == i);
         }
         if (v > 0 && v < 3)
-            release = slopes[v - 1].GetChild(0).gameObject;
+            release = slopes[v].GetChild(0).gameObject;
         else
             release = null;
         if (v == 4)
-            push = slopes[v - 1].GetChild(0).GetComponent<Rigidbody>();
+            push = slopes[v].GetChild(0).GetComponent<Rigidbody>();
         else
             push = null;
+
+        if(v == 3 || v == 6)
+            Score.moveTarget = slopes[v];
+
         Slingshot.canShoot = v == 0 || v == 3;
         Time.timeScale = 1;
         Logger.Log("Activity: " + v.ToString());

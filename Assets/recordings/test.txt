@@ -1,3 +1,121 @@
 Time: 12/10/2021 2:48:57 PM
 Gravity: 1
 Activity: 0
+Activity: 0
+Activity: 0
+Activity: 0
+Gravity: 5
+Gravity: 1
+Activity: 0
+Activity: 0
+Activity: 3
+From target: -10.63427
+From target: -12.3573
+From target: -16.75681
+From target: -12.3174
+From target: -6.403913
+From target: -2.238493
+Activity: 0
+Activity: 3
+From target: -10.46068
+From target: -6.028912
+From target: -13.97498
+Activity: 0
+Activity: 3
+From target: -0.5000343
+From target: 2.084253
+From target: -1.60313
+Activity: 7
+Activity: 8
+Activity: 7
+Activity: 6
+Gravity: 5
+Activity: 0
+Activity: 3
+From target: 0.05789757
+From target: -1.107166
+From target: -1.334358
+From target: -0.394495
+From target: -0.6382942
+From target: 2.137627
+From target: -4.987461
+From target: -0.8364582
+From target: -0.7189751
+From target: 0.8211441
+From target: 0.2259388
+From target: -0.914465
+From target: -4.492891
+Activity: 0
+Activity: 0
+Activity: 6
+Gravity: 5
+Gravity: 1
+Activity: 0
+Activity: 3
+From target: -0.09445763
+From target: 2.875389
+From target: -2.156048
+Activity: 8
+Activity: 7
+Activity: 6
+Activity: 0
+Activity: 6
+Activity: 7
+Activity: 8
+Activity: 6
+Activity: 5
+Activity: 0
+Activity: 0
+Activity: 0
+Activity: 6
+Activity: 0
+Activity: 6
+From target: -9.862728
+From target: -10.97515
+From target: -9.815662
+From target: -11.2816
+From target: -11.64385
+From target: -11.68706
+From target: -11.64948
+From target: -11.81384
+From target: -11.61711
+From target: -11.94309
+From target: -11.77095
+From target: -11.61625
+From target: -11.33682
+From target: -11.58849
+Activity: 0
+Gravity: 5
+Activity: 3
+From target: -11.22451
+Gravity: 1
+From target: -4.360821
+From target: -0.8776855
+From target: 1.188364
+Activity: 6
+From target: -0.5590897
+From target: -0.2432156
+From target: -0.2200642
+From target: -0.07668877
+From target: -0.1239929
+From target: -0.3039665
+From target: -0.6834831
+From target: -0.2237701
+From target: -0.4506149
+From target: -0.3797417
+From target: -0.7979527
+From target: -0.4508209
+From target: -0.4723301
+From target: -0.75527
+From target: -0.005813599
+From target: -0.8570576
+From target: -0.352972
+From target: 0.1488667
+From target: 2.161991
+From target: 2.951355
+Activity: 0
+Activity: 6
+From target: -0.671217
+From target: -1.084736
+From target: -1.329967
+From target: 4.64719
