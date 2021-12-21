@@ -40,8 +40,8 @@ public class Score : MonoBehaviour
                 accuracy.Add(0);
             else
             {
-                Vector3 toHit = collision.GetContact(0).point - Slingshot.shootPos;
-                Vector3 toTarget = moveTarget.position - Slingshot.shootPos;
+                Vector3 toHit = collision.GetContact(0).point - ThrowBall.throwPos;
+                Vector3 toTarget = moveTarget.position - ThrowBall.throwPos;
                 toHit.y = 0;
                 toTarget.y = 0;
                 float diff = toHit.magnitude - toTarget.magnitude;

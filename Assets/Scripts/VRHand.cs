@@ -52,7 +52,8 @@ public class VRHand : MonoBehaviour
     {
         if (nearObject.Count > 0 && nearObject[0].gameObject.layer == 8 && nearObject[0].tag == "Grabbable")
         {
-            PickUp(nearObject[0]);
+            if(!nearObject[0].GetComponent<Renderer>() || nearObject[0].GetComponent<Renderer>().enabled)
+                PickUp(nearObject[0]);
         }
         else if (nearObject.Count > 0 && nearObject[0].tag != "Grabbable")
             nearObject.Remove(nearObject[0]);
