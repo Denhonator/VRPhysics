@@ -10,6 +10,7 @@ public class Events : MonoBehaviour
     public static bool loading = true;
     public static float curGrav = 1;
     public static float releaseTime = 0;
+    public static int slope = 0;
     GameObject release = null;
     Rigidbody push = null;
     public List<Transform> slopes = new List<Transform>();
@@ -43,6 +44,7 @@ public class Events : MonoBehaviour
         Slingshot.canShoot = v == 0 || v == 3;
         Time.timeScale = 1;
         Logger.Log("Activity: " + v.ToString());
+        slope = v;
     }
 
     void Update()

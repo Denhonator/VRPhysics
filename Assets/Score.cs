@@ -15,6 +15,7 @@ public class Score : MonoBehaviour
     static List<float> accuracy = new List<float>();
     static List<float> accuracy2 = new List<float>();
     static float cooldown = 0;
+    static bool hashit = false;
     Vector3 startPos;
 
     void Start()
@@ -26,10 +27,19 @@ public class Score : MonoBehaviour
 
     void Update()
     {
-        if(isTarget && cooldown > 0)
+        if(cooldown > 0)
         {
             cooldown -= Time.deltaTime;
         }
+    }
+
+    public static void RandomTarget()
+    {
+        if (Events.slope == 6 && Events.curGrav == 1 && hashit)
+        {
+            moveTarget.localPosition = new Vector3(-18.0f + Random.Range(-1.0f, 1.0f), moveTarget.localPosition.y, moveTarget.localPosition.z);
+        }
+        hashit = false;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -48,6 +58,7 @@ public class Score : MonoBehaviour
                 diff += diff > 0 ? -moveTarget.lossyScale.x * 0.5f : moveTarget.lossyScale.x * 0.5f;
                 Logger.Log(string.Format("From target: {0}", diff));
                 accuracy.Add(diff);
+                hashit = true;
             }
             //score.text = accuracy[accuracy.Count - 1] + "\n" + score.text;
             //score2.text = score.text;

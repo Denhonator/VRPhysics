@@ -27,6 +27,7 @@ public class ThrowBall : MonoBehaviour
         else
         {
             outofhand = 0;
+            Score.RandomTarget();
         }
         GetComponent<Renderer>().enabled = outofhand < 0.1f;
 

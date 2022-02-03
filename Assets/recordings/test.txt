@@ -119,3 +119,131 @@ From target: -0.671217
 From target: -1.084736
 From target: -1.329967
 From target: 4.64719
+Activity: 0
+Activity: 0
+Activity: 6
+Gravity: 5
+From target: -0.9268265
+From target: -1.03619
+From target: -1.230663
+From target: -1.212496
+From target: -1.143227
+From target: -0.6198254
+From target: -1.215837
+From target: -4.894254
+Activity: 0
+Activity: 6
+From target: 3.422432
+From target: -1.420645
+From target: -0.3514557
+From target: -0.6463509
+From target: -1.059643
+From target: -0.3910847
+Activity: 0
+Activity: 0
+Activity: 6
+From target: -3.87131
+From target: -0.390173
+From target: -0.7917786
+From target: -0.6953335
+From target: -0.4272976
+Activity: 0
+Activity: 6
+From target: -0.009607315
+From target: -1.354116
+From target: -0.7649612
+From target: -0.7016182
+From target: -0.4473667
+From target: 0.5666046
+From target: -0.9363842
+From target: -1.81028
+From target: -0.1863747
+From target: 0.07333946
+From target: -0.09331131
+From target: -0.5944729
+From target: -0.5660477
+From target: -0.8309059
+From target: -0.5596867
+From target: -4.625908
+Activity: 0
+Activity: 6
+From target: 0.08958244
+From target: -0.1805859
+From target: -0.2043839
+From target: 0.09997368
+From target: -0.215374
+From target: 0.2146263
+From target: -0.3465004
+From target: 0.1750946
+From target: -0.1431694
+From target: -0.1746063
+From target: 0.2338963
+From target: -0.1257687
+From target: 0.1970043
+From target: 0.2232933
+From target: -0.1499805
+From target: -0.262661
+From target: -1.096502
+From target: -0.1088314
+From target: 0.1718712
+From target: 0.04769707
+From target: -0.2055702
+From target: -0.1224632
+From target: -0.2455273
+From target: 0.2049999
+Gravity: 5
+From target: -1.267801
+From target: -0.7366714
+From target: -0.7342033
+From target: -0.6698418
+From target: 0.03497887
+From target: 0.135149
+From target: -0.1208363
+From target: -0.1527538
+From target: -0.1437244
+From target: -0.7227383
+From target: 0.04738045
+From target: 0.4233284
+From target: -0.2532558
+From target: -0.006086349
+From target: 0.6236305
+From target: -0.08717537
+From target: 0.103796
+From target: -0.425581
+From target: -0.2411537
+From target: -0.2864361
+From target: -0.09919167
+From target: 0.05056381
+From target: 0.09423637
+From target: -0.06451607
+From target: 0.1190395
+Gravity: 1
+Hidden ball
+From target: -0.5267371
+From target: -0.7708321
+From target: -0.05116379
+From target: -0.7702444
+From target: -0.4762933
+From target: -0.8131797
+Activity: 4
+Activity: 5
+Activity: 3
+Visible ball
+From target: -4.544846
+From target: -2.792778
+From target: 0.3851976
+From target: 2.293995
+From target: 0.01414013
+From target: 0.2417679
+From target: 1.611829
+From target: 2.387836
+From target: 1.03579
+From target: 1.062611
+From target: 0.7947321
+From target: 0.623332
+From target: -0.08072376
+From target: 0.2317867
+From target: -1.074998
+From target: -0.3586025
+From target: -3.423684
+From target: 0.5897322
