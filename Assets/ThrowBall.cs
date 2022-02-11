@@ -5,6 +5,7 @@ using UnityEngine;
 public class ThrowBall : MonoBehaviour
 {
     public static bool hide = false;
+    public static int throws = -1;
     public static Vector3 throwPos = Vector3.zero;
     float outofhand = 0;
     Rigidbody rb = null;
@@ -29,11 +30,12 @@ public class ThrowBall : MonoBehaviour
             outofhand = 0;
             Score.RandomTarget();
         }
-        GetComponent<Renderer>().enabled = outofhand < 0.1f;
+        GetComponent<Renderer>().enabled = outofhand < 0.1f && throws != 0;
 
         if (Input.GetKeyDown(KeyCode.H))
         {
             hide = !hide;
+            outofhand = 0;
             Logger.Log(hide ? "Hidden ball" : "Visible ball");
         }
     }

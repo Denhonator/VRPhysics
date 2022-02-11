@@ -247,3 +247,34 @@ From target: -1.074998
 From target: -0.3586025
 From target: -3.423684
 From target: 0.5897322
+Activity: 0
+Activity: 0
+Activity: 0
+Activity: 3
+From target: 1.54892
+From target: -2.43413
+From target: -0.6373901
+From target: -0.3184853
+From target: 0.2240543
+Activity: 6
+From target: -0.08750534
+From target: 0.1563911
+From target: -0.07943344
+From target: 0.1892948
+From target: -0.2285786
+From target: -0.1279831
+From target: 0.01703453
+From target: 0.2014122
+From target: -0.1908512
+From target: -0.2199669
+From target: 0.1735458
+From target: -0.1179028
+From target: -0.01591301
+From target: -0.2186871
+From target: -0.0572319
+From target: 0.08917046
+From target: 0.1271172
+From target: 0.2143555
+From target: -0.2454624
+From target: 0.1775074
+Hidden ball

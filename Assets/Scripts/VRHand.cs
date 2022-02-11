@@ -116,11 +116,12 @@ public class VRHand : MonoBehaviour
             togglecol.GetComponent<Collider>().enabled = false;
 
         currentlyHeld[this] = pickedUpObject;
+        delay = 0.1f;
     }
 
     void LetGo(bool force = false)
     {
-        if (pickedUpObject.GetComponent<Slingshot>())
+        if (pickedUpObject.GetComponent<Slingshot>() || delay > 0)
         {
             return;
         }

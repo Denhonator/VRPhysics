@@ -44,7 +44,7 @@ public class Score : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (cooldown <= 0 && moveTarget.gameObject.activeInHierarchy)
+        if (cooldown <= 0 && moveTarget && moveTarget.gameObject.activeInHierarchy)
         {
             if (isTarget)
                 accuracy.Add(0);
@@ -59,6 +59,7 @@ public class Score : MonoBehaviour
                 Logger.Log(string.Format("From target: {0}", diff));
                 accuracy.Add(diff);
                 hashit = true;
+                ThrowBall.throws--;
             }
             //score.text = accuracy[accuracy.Count - 1] + "\n" + score.text;
             //score2.text = score.text;

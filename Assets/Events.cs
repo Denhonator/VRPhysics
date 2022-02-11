@@ -38,8 +38,11 @@ public class Events : MonoBehaviour
         else
             push = null;
 
-        if(v == 3 || v == 6)
+        if (v == 3 || v == 6)
+        {
             Score.moveTarget = slopes[v];
+            ThrowBall.throws = 20;
+        }
 
         Slingshot.canShoot = v == 0 || v == 3;
         Time.timeScale = 1;
