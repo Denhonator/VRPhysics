@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Events : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Events : MonoBehaviour
     public static float curGrav = 1;
     public static float releaseTime = 0;
     public static int slope = 0;
+    public InputField inpfield = null;
     GameObject release = null;
     Rigidbody push = null;
     public List<Transform> slopes = new List<Transform>();
@@ -52,7 +54,7 @@ public class Events : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !inpfield.isFocused)
         {
             grav = grav == 1 ? gravMod : 1;
             curGrav = grav;
@@ -61,7 +63,7 @@ public class Events : MonoBehaviour
         }
         for(int i = 0; i < 10; i++)
         {
-            if (Input.GetKeyDown(KeyCode.Alpha0+i))
+            if (Input.GetKeyDown(KeyCode.Alpha0+i) && !inpfield.isFocused)
             {
                 SetSlope(i);
             }
