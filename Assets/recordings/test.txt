@@ -278,3 +278,21 @@ From target: 0.2143555
 From target: -0.2454624
 From target: 0.1775074
 Hidden ball
+Activity: 0
+Activity: 1
+Activity: 0
+Activity: 0
+Activity: 0
+Activity: 1
+Activity: 2
+Activity: 3
+Activity: 4
+Activity: 5
+Activity: 6
+Activity: 7
+Activity: 8
+Activity: 9
+Activity: 0
+Activity: 1
+Activity: 2
+Activity: 1

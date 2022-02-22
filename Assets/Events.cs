@@ -31,22 +31,22 @@ public class Events : MonoBehaviour
         {
             slopes[i].gameObject.SetActive(v == i);
         }
-        if (v > 0 && v < 3)
-            release = slopes[v].GetChild(0).gameObject;
-        else
-            release = null;
-        if (v == 4)
-            push = slopes[v].GetChild(0).GetComponent<Rigidbody>();
-        else
-            push = null;
+        //if (v > 0 && v < 3)
+        //    release = slopes[v].GetChild(0).gameObject;
+        //else
+        //    release = null;
+        //if (v == 4)
+        //    push = slopes[v].GetChild(0).GetComponent<Rigidbody>();
+        //else
+        //    push = null;
 
-        if (v == 3 || v == 6)
+        if (v == 1 || v == 2)
         {
             Score.moveTarget = slopes[v];
             ThrowBall.throws = 20;
         }
 
-        Slingshot.canShoot = v == 0 || v == 3;
+        //Slingshot.canShoot = v == 0 || v == 3;
         Time.timeScale = 1;
         Logger.Log("Activity: " + v.ToString());
         slope = v;
