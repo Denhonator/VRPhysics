@@ -296,3 +296,18 @@ Activity: 0
 Activity: 1
 Activity: 2
 Activity: 1
+Activity: 0
+Activity: 0
+Activity: 1
+From target: -2.404993
+Activity: 2
+From target: -0.3285446
+Hidden ball
+From target: -1.115804
+From target: -0.9489367
+From target: -1.127683
+From target: -0.3027748
+From target: -0.9278781
+Activity: 0
+Activity: 2
+From target: -0.1490459

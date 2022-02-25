@@ -35,7 +35,7 @@ public class Score : MonoBehaviour
 
     public static void RandomTarget()
     {
-        if (Events.slope == 6 && Events.curGrav == 1 && hashit)
+        if (Events.slope == 2 && Events.curGrav == 1 && hashit)
         {
             moveTarget.localPosition = new Vector3(-18.0f + Random.Range(-1.0f, 1.0f), moveTarget.localPosition.y, moveTarget.localPosition.z);
         }
