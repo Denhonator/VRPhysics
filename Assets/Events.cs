@@ -23,6 +23,7 @@ public class Events : MonoBehaviour
         SetSlope(0);
         loading = false;
         releaseTime = 0;
+
     }
 
     void SetSlope(int v)
