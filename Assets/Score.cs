@@ -9,6 +9,10 @@ public class Score : MonoBehaviour
     public Text score2 = null;
     public bool isTarget = false;
     public static Transform moveTarget = null;
+    public Transform measuringStick = null;
+    public LineRenderer measuringLine = null;
+    public LineRenderer measuringLine2 = null;
+    public static bool measuring = false;
     public Transform trajectory = null;
     public Transform drop = null;
     public float randomRange = 14;
@@ -31,6 +35,13 @@ public class Score : MonoBehaviour
         {
             cooldown -= Time.deltaTime;
         }
+        if(Input.GetKeyDown(KeyCode.M)){
+            measuring = !measuring;
+            measuringLine.gameObject.SetActive(measuring);
+            measuringLine2.gameObject.SetActive(measuring);
+            measuringStick.gameObject.SetActive(measuring);
+            Logger.Log(measuring ? "Measurement visible" : "Measurement hidden");
+        }
     }
 
     public static void RandomTarget()
@@ -50,12 +61,15 @@ public class Score : MonoBehaviour
                 accuracy.Add(0);
             else
             {
+                measuringStick.position = collision.GetContact(0).point;
                 Vector3 toHit = collision.GetContact(0).point - ThrowBall.throwPos;
                 Vector3 toTarget = moveTarget.position - ThrowBall.throwPos;
                 toHit.y = 0;
                 toTarget.y = 0;
+                measuringLine.SetPositions(new Vector3[] {ThrowBall.throwPos, ThrowBall.throwPos+toHit});
+                measuringLine2.SetPositions(new Vector3[] {ThrowBall.throwPos, ThrowBall.throwPos+toTarget});
                 float diff = toHit.magnitude - toTarget.magnitude;
-                diff += diff > 0 ? -moveTarget.lossyScale.x * 0.5f : moveTarget.lossyScale.x * 0.5f;
+                //diff += diff > 0 ? -moveTarget.lossyScale.x * 0.5f : moveTarget.lossyScale.x * 0.5f;
                 Logger.Log(string.Format("From target: {0}", diff));
                 accuracy.Add(diff);
                 hashit = true;
@@ -69,7 +83,7 @@ public class Score : MonoBehaviour
             //    moveTarget.GetComponent<Renderer>().sharedMaterial.EnableKeyword("_EMISSION");
             //else
             //    moveTarget.GetComponent<Renderer>().sharedMaterial.DisableKeyword("_EMISSION");
-            cooldown = 1;
+            cooldown = 0.6f;
         }
         else if (trajectory.gameObject.activeInHierarchy)
         {

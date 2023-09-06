@@ -7,6 +7,8 @@ public class ThrowBall : MonoBehaviour
     public static bool hide = false;
     public static int throws = -1;
     public static Vector3 throwPos = Vector3.zero;
+    public LineRenderer measuringLine = null;
+    public LineRenderer measuringLine2 = null;
     float outofhand = 0;
     Rigidbody rb = null;
     Vector3 startPos = Vector3.zero;
@@ -19,18 +21,23 @@ public class ThrowBall : MonoBehaviour
 
     void Update()
     {
-        if ((gameObject.layer == 8 && hide && rb.velocity.sqrMagnitude > 0.1f) || (outofhand > 0 && outofhand < 3))
+        if ((gameObject.layer == 8 && transform.position != startPos) || (outofhand > 0 && outofhand < 3))
         {
-            if (outofhand == 0)
+            if (outofhand == 0){
                 throwPos = transform.position;
+            }
             outofhand += Time.deltaTime;
         }
         else
         {
             outofhand = 0;
-            Score.RandomTarget();
+            if(!Score.measuring || transform.position != startPos)
+                Score.RandomTarget();
         }
-        GetComponent<Renderer>().enabled = outofhand < 0.1f && throws != 0;
+        GetComponent<Renderer>().enabled = (outofhand < 0.1f || !hide) && throws != 0;
+
+        measuringLine.GetComponent<Renderer>().enabled = transform.position == startPos;
+        measuringLine2.GetComponent<Renderer>().enabled = transform.position == startPos;
 
         if (Input.GetKeyDown(KeyCode.H))
         {
@@ -46,5 +53,6 @@ public class ThrowBall : MonoBehaviour
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
         transform.position = startPos;
+        outofhand = hide ? outofhand : 0;
     }
 }

@@ -319,3 +319,133 @@ Activity: 0
 Activity: 0
 Activity: 0
 Activity: 0
+Activity: 0
+Activity: 0
+Activity: 2
+From target: -0.3953247
+From target: -0.7028294
+Activity: 0
+Activity: 2
+From target: -0.08019257
+Hidden ball
+From target: -0.3904786
+Visible ball
+From target: -0.6703271
+From target: 0.1088142
+From target: -1.46117
+From target: -1.141412
+From target: -0.4636505
+Activity: 0
+Activity: 2
+From target: -0.3830638
+Hidden ball
+Visible ball
+From target: -1.286024
+Hidden ball
+Visible ball
+Hidden ball
+Visible ball
+From target: -0.8477951
+Activity: 0
+Activity: 1
+From target: -8.292319
+Activity: 2
+From target: 1.137312
+Activity: 0
+Activity: 2
+From target: -0.6386369
+From target: -1.207945
+From target: -0.9056441
+From target: -0.4856484
+From target: -0.9768829
+From target: 1.322072
+From target: -0.8956387
+From target: -0.1242967
+Hidden ball
+From target: -0.2766573
+From target: -0.409011
+From target: 0.676636
+From target: 0.7584317
+From target: 0.5515115
+From target: -0.3822525
+From target: -0.5573547
+Visible ball
+From target: -0.4683485
+Activity: 1
+From target: -4.704886
+From target: -7.828766
+From target: -4.779111
+From target: -4.901033
+From target: -3.527114
+Activity: 0
+Activity: 0
+Activity: 2
+Activity: 0
+Activity: 2
+From target: 0.5342937
+From target: 0.3731074
+From target: -0.6614952
+From target: 0.01127744
+From target: -0.5525331
+From target: 0.2070363
+From target: -0.5086493
+From target: -0.4700069
+From target: 0.3291402
+Activity: 0
+Activity: 2
+From target: 0.3246529
+From target: -1.118773
+From target: -0.7471589
+From target: -1.43093
+From target: -1.55224
+From target: -1.090068
+From target: -1.184079
+From target: -1.413332
+From target: -0.8043525
+From target: -1.478186
+From target: -0.4919372
+From target: -1.787373
+From target: -2.036201
+From target: -2.025526
+From target: -1.537269
+From target: -0.9938245
+From target: -1.387986
+From target: -1.558347
+From target: -0.4500618
+From target: 0.2667624
+Activity: 0
+Activity: 2
+From target: -0.22841
+From target: -0.1521015
+From target: 0.3153322
+From target: -0.2412157
+From target: -0.3730266
+From target: 0.08250141
+From target: -0.4588408
+From target: -0.4522965
+From target: 0.9580441
+From target: 0.5015765
+From target: 0.4753556
+From target: -1.078044
+From target: 0.1068478
+From target: 0.4276962
+From target: 0.4046156
+From target: -0.8811163
+From target: 0.1852725
+From target: -0.5853273
+From target: 0.6246827
+From target: 0.0772084
+Activity: 2
+Hidden ball
+From target: -0.6321287
+From target: -0.5656044
+From target: 0.08105254
+From target: -0.6935468
+From target: -0.03088474
+From target: -1.764819
+From target: -0.04173386
+Visible ball
+Activity: 2
+From target: -0.4988925
+From target: 0.3573925
+From target: -0.04837203
